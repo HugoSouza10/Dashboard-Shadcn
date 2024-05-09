@@ -25,34 +25,35 @@ export const menuConfig: MenuItem[] = [
       {
         title: "Command",
         icon: "Command",
-        path: "/otherpage",
+        path: "/teste1",
         onClick: () => console.log("Opção 2 clicada")
       },
       {
         title: "Coffee",
         icon: "Coffee",
-        path: "/otherpage",
-        onClick: () => console.log("Opção 2 clicada")
+        path: "/teste2",
+        onClick: () => console.log("Opção 3 clicada")
       },
 
       {
         title: "Code",
         icon: "Code",
-        path: "/otherpage",
-        onClick: () => console.log("Opção 2 clicada")
+        path: "/teste3",
+        onClick: () => console.log("Opção 4 clicada")
       },
 
       {
         title: "Cloud",
         icon: "Cloud",
-        path: "/otherpage",
-        onClick: () => console.log("Opção 2 clicada")
+        path: "/teste3",
+        onClick: () => console.log("Opção 5 clicada")
       },
 
       {
         title: "MonitorPlay",
         icon: "MonitorPlay",
-        path: "/otherpage",
-        onClick: () => console.log("Opção 2 clicada")
+        path: "/teste4",
+        onClick: () => console.log("Opção 6 clicada")
       },
+      
 ]

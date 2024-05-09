@@ -12,7 +12,7 @@ export const ItemMenu = ({title, icon, active, onClick }: MenuItem) => {
     const IconComponent = Icons[icon]; // Selecione o componente de ícone dinamicamente
     return(
     <>
-        <div onClick={handleClick} className={`flex items-center cursor-pointer p-2 mt-5 rounded-sm ${active ? 'bg-blue-500' : ''}`}>
+        <div onClick={handleClick} className={`flex items-center cursor-pointer p-2 rounded-sm ${active ? 'bg-blue-500' : ''}`}>
             {IconComponent && <IconComponent className="mr-2 h-4 w-4" />} {/* Renderize o ícone se fornecido */}
             <span>{title}</span>
         </div>
