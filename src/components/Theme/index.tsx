@@ -11,7 +11,7 @@ export const Theme = ({children}:Props) => {
             <div className='Area'>
                 <Header/>
                 <div className='Container-geral flex h-full'>
-                    <div className='Page flex-1 pl-5 bg-red-800'>
+                    <div className='Page flex-1 pl-5'>
                         {children}
                     </div>
                 </div>

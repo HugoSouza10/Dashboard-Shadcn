@@ -19,7 +19,7 @@ export const Header = () => {
         }
       };
     return(
-        <header className=' bg-orange-500 h-14 flex items-center pl-5 pr-5'>
+        <header className=' bg-blue-500 h-14 flex items-center pl-5 pr-5'>
             <div className="header-left flex flex-1">
                 {/*Menu lateral */}
                 <SideMenu/>
