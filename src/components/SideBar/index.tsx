@@ -7,8 +7,8 @@ import {
     SheetContent,
     SheetTrigger 
 } from "@/components/ui/sheet";
-import { Separator } from "@/components/ui/separator"
 import { ItemMenu } from "./item-menu";
+import { menuConfig, MenuItem } from './menuConfig';
 export const SideMenu = () => {
     return (
         <Sheet>
@@ -17,17 +17,16 @@ export const SideMenu = () => {
                 </SheetTrigger>
                 <SheetContent className="w-96" side = 'left'>
                     <div>Logo</div>
-                        <ItemMenu title={'Fogo'} icon={'Flame'} active={true}/>
-                        <Separator/>
-                        <ItemMenu title={'Command'} icon={'Command'}/>
-                        <Separator/>
-                        <ItemMenu title={'Coffee'} icon={'Coffee'}/>
-                        <Separator/>
-                        <ItemMenu title={'Code'} icon={'Code'}/>
-                        <Separator/>
-                        <ItemMenu title={'Cloud'} icon={'Cloud'}/>
-                        <Separator/>
-                        <ItemMenu title={'MonitorPlay'} icon={'MonitorPlay'}/>
+                    {menuConfig.map((item: MenuItem, index: number) => (
+                        <ItemMenu 
+                            key={index} 
+                            title={item.title} 
+                            icon={item.icon} 
+                            active={item.active} 
+                            path={item.path}
+                            onClick={item.onClick} 
+                        />
+                    ))}
                 </SheetContent>
         </Sheet>
     )
