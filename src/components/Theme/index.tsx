@@ -10,8 +10,8 @@ export const Theme = ({children}:Props) => {
         <div className='container-full'>
             <div className='Area'>
                 <Header/>
-                <div className='Container-geral flex h-full'>
-                    <div className='Page flex-1 pl-5'>
+                <div className='flex h-full'>
+                    <div className='Page flex-1'>
                         {children}
                     </div>
                 </div>

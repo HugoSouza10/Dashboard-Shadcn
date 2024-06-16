@@ -16,7 +16,7 @@ export const SideMenu = () => {
                 <SheetTrigger asChild >
                     <MenuIcon className="cursor-pointer"/>
                 </SheetTrigger>
-                <SheetContent className="w-96" side = 'left'>
+                <SheetContent side = 'left'>
                 <SheetHeader>
                     <div className="mb-5">Dr.Carla</div>
                 </SheetHeader>
