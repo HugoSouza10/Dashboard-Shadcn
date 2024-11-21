@@ -14,9 +14,9 @@ export const SideMenu = () => {
     return (
         <Sheet>
                 <SheetTrigger asChild >
-                    <MenuIcon className="cursor-pointer"/>
+                    <MenuIcon  className="cursor-pointer text-white"/>
                 </SheetTrigger>
-                <SheetContent side = 'left'>
+                <SheetContent side = 'left' className="w-[250px] md:w-[250px]">
                 <SheetHeader>
                     <div className="mb-5">Dr.Carla</div>
                 </SheetHeader>

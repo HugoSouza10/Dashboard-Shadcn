@@ -19,14 +19,14 @@ export const Header = () => {
         }
       };
     return(
-        <header className=' bg-blue-500 h-14 flex items-center pl-5 pr-5'>
+        <header className=' bg-primary h-14 flex items-center pl-5 pr-5'>
             <div className="header-left flex flex-1">
                 {/*Menu lateral */}
                 <SideMenu/>
-                <div className="logo pl-5">Logo</div>
+                <div className="logo pl-5 text-white">Logo</div>
             </div>
             <div className="header-right flex items-center">
-                <div className="user-name pr-5">Hugo Souza</div>
+                <div className="user-name pr-5 text-white">Hugo Souza</div>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Avatar className="focus:outline-none cursor-pointer">

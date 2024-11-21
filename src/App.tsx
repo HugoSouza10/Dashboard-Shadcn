@@ -11,23 +11,23 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const Page = () => {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <div>
-        <ThemeToggle/>
+        {/*<ThemeToggle/>*/}
         <Theme>
           <div className="container p-5">
             <h1 className="mb-5">Bem-vindo, Dr.Carla!</h1>
             <div className="Dashboard-card grid md:grid-cols-2 gap-5">
-              <Card className="hover:bg-blue-500 flex items-center">
+              <Card className="hover: bg-[#00A180] flex items-center">
                   <CardHeader className="pt-3">
-                    <Ear className="sm: w-7 w-h-7 md:w-10 h-10"/>
+                    <Ear className="sm: w-7 w-h-7 md:w-10 h-10 text-white"/>
                   </CardHeader>
                   <CardContent className="pt-3">
-                    <CardTitle className="text-lg font-semibold">Aparelhos vendidos</CardTitle>
-                    <CardDescription className="text-xl font-bold">200</CardDescription>
+                    <CardTitle className="text-lg font-semibold text-white">Aparelhos vendidos</CardTitle>
+                    <CardDescription className="text-xl font-bold text-white">200</CardDescription>
                   </CardContent>
               </Card>
-              <Card className="hover:bg-blue-500 flex items-center">
+              <Card className="hover:text-white hover:bg-[#00A180] flex items-center">
                   <CardHeader className="pt-3">
                     <Zap className="sm: w-7 w-h-7 md:w-10 h-10"/>
                   </CardHeader>
@@ -36,7 +36,7 @@ const Page = () => {
                     <CardDescription className="text-xl font-bold">20</CardDescription>
                   </CardContent>
               </Card>
-              <Card className="hover:bg-blue-500 flex items-center xl:col-span-1 md:col-span-2">
+              <Card className="hover:bg-[#00A180] flex items-center xl:col-span-1 md:col-span-2">
                   <CardHeader className="pt-3">
                     <DollarSign className="sm: w-7 w-h-7 md:w-10 h-10"/>
                   </CardHeader>
