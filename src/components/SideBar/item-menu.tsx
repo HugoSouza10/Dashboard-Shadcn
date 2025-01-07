@@ -2,12 +2,13 @@
 import * as Icons from "lucide-react"; // Importe todos os ícones disponíveis
 import { Separator } from "@/components/ui/separator"
 import { MenuItem } from './menuConfig';
+import { useNavigate } from "react-router-dom"; // Importa o hook useNavigate
 
-export const ItemMenu = ({title, icon, active, onClick }: MenuItem) => {
+export const ItemMenu = ({title, icon, active, path }: MenuItem) => {
+    const navigate = useNavigate(); // Inicializa o hook
     const handleClick = () => {
-        if (onClick) {
-            onClick(); // Chama a função onClick se ela estiver definida
-        }
+       navigate(path); // Redireciona para o caminho especificado
+       console.log(path)
     };
     const IconComponent = Icons[icon]; // Selecione o componente de ícone dinamicamente
     return(

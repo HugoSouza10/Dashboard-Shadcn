@@ -1,3 +1,4 @@
+import { GraficosDashbord } from "@/components/Graficos";
 import { Theme } from "@/components/Theme";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Ear, Zap } from "lucide-react";
@@ -17,8 +18,7 @@ export const Dashboard = () => {
                   </CardHeader>
                   <CardContent className="pt-3">
                     <CardTitle className="text-lg font-semibold">Aparelhos Auditivos</CardTitle>
-                    <p className="text-slate-500">Total de Aparelhos</p>
-                    <CardDescription className="text-slate-900 text-2xl font-bold">200</CardDescription>
+                    <CardDescription className="text-slate-500 text-2xl font-bold">200</CardDescription>
                   </CardContent>
               </Card>
               <Card className="flex items-center">
@@ -27,8 +27,7 @@ export const Dashboard = () => {
                   </CardHeader>
                   <CardContent className="pt-3">
                     <CardTitle className="text-lg font-semibold">Pilhas</CardTitle>
-                    <p className="text-slate-500">Total de pilhas</p>
-                    <CardDescription className="text-slate-900 text-2xl font-bold">20</CardDescription>
+                    <CardDescription className="text-slate-500 text-2xl font-bold">20</CardDescription>
                   </CardContent>
               </Card>
               <Card className="flex items-center xl:col-span-1 md:col-span-2">
@@ -36,9 +35,8 @@ export const Dashboard = () => {
                     <DollarSign className="text-primary"/>
                   </CardHeader>
                   <CardContent className="pt-3 row-span-2">
-                    <CardTitle className="text-lg font-semibold">Vendas</CardTitle>
-                    <p className="text-slate-500">Total de vendas</p>
-                    <CardDescription className="text-slate-900 text-2xl font-bold">R$: 50,000</CardDescription>
+                    <CardTitle className="text-lg font-semibold">Vendas totais</CardTitle>
+                    <CardDescription className="text-slate-500 text-2xl font-bold">R$: 50,000</CardDescription>
                   </CardContent>
               </Card>
               <Card className="flex items-center xl:col-span-1 md:col-span-2">
@@ -46,11 +44,11 @@ export const Dashboard = () => {
                     <DollarSign className="text-primary"/>
                   </CardHeader>
                   <CardContent className="pt-3 row-span-2">
-                    <CardTitle className="text-lg font-semibold">Vendas</CardTitle>
-                    <p className="text-slate-500">Total de vendas</p>
-                    <CardDescription className="text-slate-900 text-2xl font-bold">R$: 50,000</CardDescription>
+                    <CardTitle className="text-lg font-semibold">Receita hoje</CardTitle>
+                    <CardDescription className="text-slate-500 text-2xl font-bold">R$: 5000</CardDescription>
                   </CardContent>
               </Card>
+              <GraficosDashbord/>
             </div>
           </div>
         </Theme>
